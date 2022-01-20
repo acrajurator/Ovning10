@@ -16,7 +16,7 @@ function getApi(input) {
             mass = data['result'][0]['properties']['mass'];
             gender = data['result'][0]['properties']['gender'];
             hairColor = data['result'][0]['properties']['gender'];
-            let s = `Name: ${name} \n  ${description}\n Height: ${height}, Mass: ${mass}, Gender: ${gender}, Haircolor: ${gender}`;
+            let s = `Name: ${name} \n${description}\nHeight: ${height}, Mass: ${mass}, Gender: ${gender}, Haircolor: ${gender}`;
             textArea.value = s;
         })
         .catch(err => console.log('meh' + err))
